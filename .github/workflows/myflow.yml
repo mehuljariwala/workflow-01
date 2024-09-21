@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Who initialized the flow?
+        run: "${{ github.actor }} initialized the flow"
+
+      - name: Debug the Github context
+        run: "${{ toJSON(github) }}"
